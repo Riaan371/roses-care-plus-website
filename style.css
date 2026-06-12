@@ -414,6 +414,16 @@ section { padding: 80px 0; }
   color: #f4e9fb;
 }
 
+.contact-card p a {
+  color: #f4e9fb;
+  text-decoration: underline;
+  text-decoration-color: rgba(244,233,251,0.4);
+}
+
+.contact-card p a:hover {
+  color: #fff;
+}
+
 /* ===== Footer ===== */
 .site-footer {
   background: #2b1e3a;
