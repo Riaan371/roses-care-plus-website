@@ -273,6 +273,70 @@ section { padding: 80px 0; }
 /* ===== About ===== */
 .about { background: #fff; }
 
+/* ===== Why Choose Us ===== */
+.why-choose-us { background: var(--bg-light); }
+
+.why-choose-us .section-lead {
+  margin-bottom: 20px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(106,61,154,0.08);
+  border-left: 4px solid var(--pink);
+}
+
+.why-card:nth-child(2n) { border-left-color: var(--purple); }
+
+.why-card h3 {
+  font-family: var(--font-head);
+  color: var(--purple);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: #5a4a66;
+  font-size: 0.95rem;
+}
+
+.md-quote {
+  margin-top: 50px;
+  padding: 32px 40px;
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  color: #fff;
+  border-radius: 18px;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.md-quote span {
+  display: block;
+  margin-top: 14px;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+@media (max-width: 800px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .md-quote { padding: 24px; font-size: 1.05rem; }
+}
+
 /* ===== Services ===== */
 .services { background: var(--bg-light); }
 
